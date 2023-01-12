@@ -17,8 +17,7 @@ public class TestBodyStats {
 			
 			System.out.print("Enter height: ");
 			System.in.read(kbheight);
-			String height1 = new String(kbheight);
-			height1 = String.format("%s%s", height1.charAt(0), height1.charAt(1));
+			String height1 = new String(kbheight).toString().trim();
 			height = Integer.parseInt(height1);
 		} catch (IOException e) {
 			e.printStackTrace();
