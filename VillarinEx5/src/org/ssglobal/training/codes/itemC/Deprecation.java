@@ -1,7 +1,7 @@
 package org.ssglobal.training.codes.itemC;
 
 public class Deprecation {
-	private int MACHINE_PURCHASED = 28_000;
+	private final int MACHINE_PURCHASED = 28_000;
 	private final int RATE = 4_000;
 	
 	public void depreciate() {

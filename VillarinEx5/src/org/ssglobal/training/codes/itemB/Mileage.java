@@ -24,7 +24,7 @@ public class Mileage {
 			System.out.print("Enter price per gallon: ");
 			System.in.read(kbprice);
 			String price = new String(kbprice).toString().trim();
-			pricePerGallon = Double.parseDouble(price.trim());
+			pricePerGallon = Double.parseDouble(price);
 			System.in.skipNBytes(System.in.available());
 			
 			byte[] kbamount = new byte[1024];
