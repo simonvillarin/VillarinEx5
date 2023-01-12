@@ -19,9 +19,9 @@ public class CovidDetector {
 			int gatcc = sequence2.indexOf("GATCC");
 			
 			if (gaattc != -1) {
-				System.out.format("GAATTC: %d, %d", gaattc, (gaattc + 6));
+				System.out.format("GAATTC: %d, %d", gaattc, (gaattc + 5));
 			} else if (gatcc != -1){
-				System.out.format("GATCC: %d, %d", gatcc, (gatcc + 5));
+				System.out.format("GATCC: %d, %d", gatcc, (gatcc + 4));
 			} else {
 				System.out.println("-1");
 			}
