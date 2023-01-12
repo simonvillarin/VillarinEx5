@@ -18,10 +18,12 @@ public class CovidDetector {
 			int gaattc = sequence2.indexOf("GAATTC");
 			int gatcc = sequence2.indexOf("GATCC");
 			
-			if (gaattc != -1 || gatcc != -1) {
-				System.out.println("DNA sequence is not safe");
+			if (gaattc != -1) {
+				System.out.format("GAATTC: %d, %d", (gaattc + 1), (gaattc + 6));
+			} else if (gatcc != -1){
+				System.out.format("GATCC: %d, %d", (gatcc + 1), (gatcc + 5));
 			} else {
-				System.out.println("DNA sequence is safe");
+				System.out.println("-1");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
